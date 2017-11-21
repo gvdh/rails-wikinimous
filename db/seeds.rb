@@ -1,3 +1,12 @@
+require 'faker'
+
+
+10.times do
+  Article.create(
+    title: Faker::Hobbit.character,
+    content: Faker::ChuckNorris.fact
+    )
+end
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
